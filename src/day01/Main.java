@@ -15,6 +15,6 @@ public class Main {
         for (List<String> group: groupedContent) {
             convoy.addElf(group);
         }
-        System.out.println(convoy.getMostHeavy());
+        System.out.println(convoy.getMostHeavyBag(3));
     }
 }
