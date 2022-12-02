@@ -9,10 +9,13 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         List<String> rounds = Files.readAllLines(Paths.get("/home/albert/Projects/git/Advent of Code 22/AoC22/src/day02/input.txt"));
-        int totalPoints = 0;
+        int totalPointsRound1 = 0;
+        int totalPointsRound2 = 0;
         for (String round: rounds) {
-            totalPoints += PointsCalculator.calculateRoundPoints(round);
+            totalPointsRound1 += PointsCalculator.calculateRoundPoints(round);
+            totalPointsRound2 += PointsCalculator2.calculateRoundPoints(round);
         }
-        System.out.println(totalPoints);
+        System.out.println(totalPointsRound1);
+        System.out.println(totalPointsRound2);
     }
 }
