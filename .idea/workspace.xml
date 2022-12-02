@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day01 first star">
+    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day01 second star">
+      <change afterPath="$PROJECT_DIR$/src/day02/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day02/PointsCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day02/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day01/ElfConvoy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day01/ElfConvoy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day01/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day01/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,14 +34,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.day01.Main">
+}</component>
+  <component name="RunManager" selected="Application.day02.Main">
     <configuration name="ElfConvoy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day01.ElfConvoy" />
       <module name="AoC22" />
@@ -74,8 +75,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="day02.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day02.Main" />
+      <module name="AoC22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.day02.Main" />
         <item itemvalue="Application.day01.Main" />
         <item itemvalue="Application.ElfConvoy" />
         <item itemvalue="Application.Main" />
@@ -105,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669922193034</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Day01 second star">
+      <created>1669924235368</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669924235368</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,15 +144,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Day01 first star" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day01 first star" />
+    <MESSAGE value="Day01 second star" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day01 second star" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/day01/ElfConvoy.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/day02/PointsCalculator.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
