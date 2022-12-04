@@ -19,4 +19,20 @@ public final class SectionPair {
         return firstLower <= secondLower && firstHigher >= secondHigher ||
                 firstLower >= secondLower && firstHigher <= secondHigher;
     }
+
+    static boolean isOverlapping2(String sectionPair) {
+        String[] sections = sectionPair.split(",");
+        String firstSection = sections[0];
+        String secondSection = sections[1];
+        String[] firstRange = firstSection.split("-");
+        String[] secondRange = secondSection.split("-");
+        int firstLower = Integer.parseInt(firstRange[0]);
+        int firstHigher = Integer.parseInt(firstRange[1]);
+        int secondLower = Integer.parseInt(secondRange[0]);
+        int secondHigher = Integer.parseInt(secondRange[1]);
+        return (firstLower <= secondLower && firstHigher >= secondHigher) ||
+                (firstLower >= secondLower && firstHigher <= secondHigher) ||
+                (firstHigher >= secondLower && firstLower < secondHigher) ||
+                (firstLower <= secondHigher && firstHigher > secondLower);
+    }
 }

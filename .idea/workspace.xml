@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day03 both stars">
-      <change afterPath="$PROJECT_DIR$/src/dayo4/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dayo4/SectionPair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dayo4/input.txt" afterDir="false" />
+    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day04 first star">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day04/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day04/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day04/SectionPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day04/SectionPair.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.dayo4.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ElfConvoy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day01.ElfConvoy" />
       <module name="AoC22" />
@@ -113,7 +112,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.dayo4.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.day03.Main" />
         <item itemvalue="Application.day02.Main" />
         <item itemvalue="Application.day01.Main" />
@@ -172,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670091278473</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Day04 first star">
+      <created>1670153773059</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670153773059</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +199,7 @@
     <MESSAGE value="Day02 first star" />
     <MESSAGE value="Day02 second star" />
     <MESSAGE value="Day03 both stars" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day03 both stars" />
+    <MESSAGE value="Day04 first star" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day04 first star" />
   </component>
 </project>
