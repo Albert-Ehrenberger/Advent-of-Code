@@ -27,6 +27,21 @@ public final class CommandsExecutor {
         }
     }
 
+    public static void executeCommands2(List<ArrayDeque<Character>> stacks, List<String> inputs) {
+        for (String input: inputs) {
+            List<Integer> command = extractCommand(input);
+            ArrayDeque<Character> tempStack = new ArrayDeque<>(0);
+            for (int i = 0; i < command.get(REPEAT_POSITION); i++){
+                ArrayDeque<Character> fromStack = stacks.get(command.get(FROM_POSITION) - 1);
+                tempStack.addLast(fromStack.removeLast());
+            }
+            for (int i = 0; i < command.get(REPEAT_POSITION); i++){
+                ArrayDeque<Character> toStack = stacks.get(command.get(TO_POSITION) - 1);
+                toStack.addLast(tempStack.removeLast());
+            }
+        }
+    }
+
     private static List<Integer> extractCommand(String stringToSearch){
         Pattern integerPattern = Pattern.compile("-?\\d+");
         Matcher matcher = integerPattern.matcher(stringToSearch);

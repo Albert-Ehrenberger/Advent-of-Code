@@ -24,7 +24,7 @@ public final class Main {
             stacks.add(new ArrayDeque<>(0));
         }
         StacksBuilder.buildStacks(stacks, inputs.subList(0, MAX_HEIGHT_OF_STACK));
-        CommandsExecutor.executeCommands(stacks, inputs.subList(FIRST_COMMAND_INPUT - 1, inputs.size()));
+        CommandsExecutor.executeCommands2(stacks, inputs.subList(FIRST_COMMAND_INPUT - 1, inputs.size()));
         System.out.println(printTopOfStacks(stacks));
     }
 

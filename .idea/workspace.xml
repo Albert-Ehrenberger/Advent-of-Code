@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day05 Turned inputs into separate stacks">
-      <change afterPath="$PROJECT_DIR$/src/day05/CommandsExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day05/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/Main.java" afterDir="false" />
+    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day05 first star">
+      <change beforePath="$PROJECT_DIR$/src/day05/CommandsExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day05/CommandsExecutor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670274580648</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Day05 first star">
+      <created>1670277069101</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670277069101</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,14 +236,15 @@
     <MESSAGE value="Day04 second star" />
     <MESSAGE value="Changed file paths to input to be relative" />
     <MESSAGE value="Day05 Turned inputs into separate stacks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day05 Turned inputs into separate stacks" />
+    <MESSAGE value="Day05 first star" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day05 first star" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/day05/CommandsExecutor.java</url>
-          <line>24</line>
+          <line>25</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
