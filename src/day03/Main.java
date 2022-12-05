@@ -10,7 +10,7 @@ import com.google.common.collect.Lists;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        List<String> backpacks = Files.readAllLines(Paths.get("/home/albert/Projects/git/Advent of Code 22/AoC22/src/day03/input.txt"));
+        List<String> backpacks = Files.readAllLines(Paths.get("./src/day03/input.txt"));
         String possibleItemsString = "abcdefghijklmnopqrstuvwxyz" + "abcdefghijklmnopqrstuvwxyz".toUpperCase();
         String[] possibleItems = possibleItemsString.split("");
         int initialPriority = 1;
