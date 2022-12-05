@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day04 first star">
+    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Changed file paths to input to be relative">
+      <change afterPath="$PROJECT_DIR$/src/day05/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day05/StacksBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day05/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day04/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day04/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day04/SectionPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day04/SectionPair.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,20 +45,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="ElfConvoy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day01.ElfConvoy" />
-      <module name="AoC22" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.day05.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day04.Main" />
       <module name="AoC22" />
@@ -110,13 +98,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="day05.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day05.Main" />
+      <module name="AoC22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.day05.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.day03.Main" />
         <item itemvalue="Application.day02.Main" />
         <item itemvalue="Application.day01.Main" />
-        <item itemvalue="Application.ElfConvoy" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +179,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670153773059</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Day04 second star">
+      <created>1670175010351</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670175010351</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Changed file paths to input to be relative">
+      <created>1670271506544</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670271506544</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,6 +215,24 @@
     <MESSAGE value="Day02 second star" />
     <MESSAGE value="Day03 both stars" />
     <MESSAGE value="Day04 first star" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day04 first star" />
+    <MESSAGE value="Day04 second star" />
+    <MESSAGE value="Changed file paths to input to be relative" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed file paths to input to be relative" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day05/Main.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day05/StacksBuilder.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
