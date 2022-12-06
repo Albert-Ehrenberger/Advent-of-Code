@@ -3,7 +3,9 @@ package day05;
 import java.util.ArrayDeque;
 import java.util.List;
 
-import static day05.Main.*;
+import static day05.Main.DISTANCE_BETWEEN_CRATES;
+import static day05.Main.LENGTH_OF_CRATE_INPUTS;
+import static day05.Main.STARTING_POSITION;
 
 public final class StacksBuilder {
 
