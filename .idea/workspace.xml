@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day07 First draft for solution">
+    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day07 First star">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC22.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AoC22.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day07/FilesystemOverviewBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/FilesystemOverviewBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/day07/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day07/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -249,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670444420766</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Day07 First star">
+      <created>1670447214548</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1670447214548</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,17 +285,7 @@
     <MESSAGE value="Removed import wildcards and updated config so that they are prevented" />
     <MESSAGE value="Day07 Filesystem is built" />
     <MESSAGE value="Day07 First draft for solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day07 First draft for solution" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/day07/Main.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Day07 First star" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day07 First star" />
   </component>
 </project>
