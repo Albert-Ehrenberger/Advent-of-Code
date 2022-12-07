@@ -3,8 +3,10 @@ package day07;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.HashMap;
 import java.util.List;
+
+import com.google.common.collect.Multimap;
+
 
 public class Main {
 
@@ -13,7 +15,7 @@ public class Main {
         FilesystemBuilder FSBuilder = new FilesystemBuilder();
         Directory myFS = FSBuilder.build(consoleLines);
         FilesystemOverviewBuilder overviewBuilder = new FilesystemOverviewBuilder();
-        HashMap<String, Integer> overview = overviewBuilder.build(myFS);
+        Multimap<String, Integer> overview = overviewBuilder.build(myFS);
         int smallDirsTotalSize = 0;
         for (int size : overview.values()) {
             if (size < 100000) {
