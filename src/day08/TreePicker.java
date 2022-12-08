@@ -1,11 +1,13 @@
 package day08;
 
 import java.util.List;
+import java.util.Map;
 import java.util.TreeMap;
 
 public class TreePicker {
 
     private final TreeMap<String, Tree> visibleTrees = new TreeMap<>();
+    private final TreeMap<String, Integer> scoredTrees = new TreeMap<>();
     private Tree[][] treeArray;
     private int rowMax;
     private int columnMax;
@@ -17,6 +19,76 @@ public class TreePicker {
         topToBottomSearch();
         bottomToTopSearch();
         return visibleTrees;
+    }
+
+    public TreeMap<String, Integer> gradeTrees(TreeMap<String, Tree> visibleTrees) {
+        for (Map.Entry<String, Tree> entry : visibleTrees.entrySet()) {
+            String key = entry.getKey();
+            Tree value = entry.getValue();
+            determineScenicScore(key, value);
+        }
+        return scoredTrees;
+    }
+
+    private void determineScenicScore(String key, Tree tree) {
+        int scenicScore = 1;
+        scenicScore *= lookLeft(tree);
+        scenicScore *= lookRight(tree);
+        scenicScore *= lookDown(tree);
+        scenicScore *= lookUp(tree);
+        scoredTrees.put(key, scenicScore);
+    }
+
+    private int lookLeft(Tree tree) {
+        int height = tree.height();
+        int visibleTreesAmount = 1;
+        try {
+            while (height > treeArray[tree.row()][tree.column() - visibleTreesAmount].height()) {
+                visibleTreesAmount ++;
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            return visibleTreesAmount - 1;
+        }
+        return visibleTreesAmount;
+    }
+
+    private int lookRight(Tree tree) {
+        int height = tree.height();
+        int visibleTreesAmount = 1;
+        try {
+            while (height > treeArray[tree.row()][tree.column() + visibleTreesAmount].height()) {
+                visibleTreesAmount ++;
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            return visibleTreesAmount - 1;
+        }
+        return visibleTreesAmount;
+    }
+
+    private int lookDown(Tree tree) {
+        int height = tree.height();
+        int visibleTreesAmount = 1;
+        try {
+            while (height > treeArray[tree.row() + visibleTreesAmount][tree.column()].height()) {
+                visibleTreesAmount ++;
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            return visibleTreesAmount - 1;
+        }
+        return visibleTreesAmount;
+    }
+
+    private int lookUp(Tree tree) {
+        int height = tree.height();
+        int visibleTreesAmount = 1;
+        try {
+            while (height > treeArray[tree.row() - visibleTreesAmount][tree.column()].height()) {
+                visibleTreesAmount ++;
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            return visibleTreesAmount - 1;
+        }
+        return visibleTreesAmount;
     }
 
     private void createArray(List<String> treeRows) {

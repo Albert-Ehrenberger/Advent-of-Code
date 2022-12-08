@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day08 This isn't working">
+    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day08 First star">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/day08/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/day08/TreePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/TreePicker.java" afterDir="false" />
@@ -297,7 +297,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670531520974</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Day08 First star">
+      <created>1670534161001</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1670534161002</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Day08 First star">
+      <created>1670534209114</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1670534209114</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,17 +349,7 @@
     <MESSAGE value="Day08 TreePicker immediately adds first and last tree rows  to potentialTrees" />
     <MESSAGE value="Day08 State before I realized I understood the requirement wrongly" />
     <MESSAGE value="Day08 This isn't working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day08 This isn't working" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/day08/TreePicker.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Day08 First star" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day08 First star" />
   </component>
 </project>
