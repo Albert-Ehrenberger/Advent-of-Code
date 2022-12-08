@@ -7,144 +7,145 @@ import java.util.TreeMap;
 
 public class TreePicker {
 
-    private final TreeMap<String, Tree> potentialTrees = new TreeMap<>();
     private final TreeMap<String, Tree> visibleTrees = new TreeMap<>();
+    private final TreeMap<String, Tree> visibleTrees2 = new TreeMap<>();
     private int currentRowNumber;
-    private List<String> rotatedPotentialMap;
+    private List<String> rotatedTreeMap;
 
-    public void findVisible(List<String> treeRows) {
-        addFirstAndLastPotentialRows(treeRows);
-        for (currentRowNumber = 1; currentRowNumber < treeRows.size() - 1; currentRowNumber++) {
-            findPotentialTreesInRow(treeRows.get(currentRowNumber));
+    public TreeMap<String, Tree> findVisible(List<String> treeRows) {
+        for (currentRowNumber = 0; currentRowNumber < treeRows.size(); currentRowNumber++) {
+            findVisibleTreesByRow(treeRows.get(currentRowNumber));
         }
-        initializeRotatedPotentialMap(treeRows.size(), treeRows.get(0).length());
-        createRotatedPotentialMap();
-        addFirstAndLastVisibleRows();
-        for (currentRowNumber = 1; currentRowNumber < rotatedPotentialMap.size() - 1; currentRowNumber++) {
-            findVisibleTreesInRow(rotatedPotentialMap.get(currentRowNumber));
+        initializeRotatedTreeMap(treeRows.size(), treeRows.get(0).length());
+        createRotatedTreeMap(treeRows);
+        for (currentRowNumber = 0; currentRowNumber < rotatedTreeMap.size(); currentRowNumber++) {
+            findVisibleTreesByColumn(rotatedTreeMap.get(currentRowNumber));
         }
+        return visibleTrees;
     }
 
     public void addFirstAndLastPotentialRows(List<String> treeRows) {
         String firstRow = treeRows.get(0);
         String lastRow = treeRows.get(treeRows.size() - 1);
         for (int column = 0; column < firstRow.length(); column++) {
-            addPotentialTree(0, column, Integer.parseInt(firstRow.substring(column, column + 1)));
-            addPotentialTree(treeRows.size() - 1, column, Integer.parseInt(lastRow.substring(column, column + 1)));
+            addTree(0, column, Integer.parseInt(firstRow.substring(column, column + 1)));
+            addTree(treeRows.size() - 1, column, Integer.parseInt(lastRow.substring(column, column + 1)));
         }
     }
 
     public void addFirstAndLastVisibleRows() {
-        String firstRow = rotatedPotentialMap.get(0);
-        String lastRow = rotatedPotentialMap.get(rotatedPotentialMap.size() - 1);
+        String firstRow = rotatedTreeMap.get(0);
+        String lastRow = rotatedTreeMap.get(rotatedTreeMap.size() - 1);
         for (int column = 0; column < firstRow.length(); column++) {
-            addVisibleTree(0, column, Integer.parseInt(firstRow.substring(column, column + 1)));
-            addVisibleTree(rotatedPotentialMap.size() - 1, column, Integer.parseInt(lastRow.substring(column, column + 1)));
+            addRotatedTree(0, column, Integer.parseInt(firstRow.substring(column, column + 1)));
+            addRotatedTree(rotatedTreeMap.size() - 1, column, Integer.parseInt(lastRow.substring(column, column + 1)));
         }
     }
 
 
-    private void findPotentialTreesInRow(String row) {
-        leftToRightSearch(row);
-        rightToLeftSearch(row);
+    private void findVisibleTreesByRow(String row) {
+        leftToRightRowSearch(row);
+        rightToLeftRowSearch(row);
     }
 
-    private boolean addPotentialTree(int row, int column, int height) {
-        String treeName = row + String.valueOf(column);
-        if (!potentialTrees.containsKey(treeName)) {
-            Tree tree = new Tree(row, column, height);
-            potentialTrees.put(treeName, tree);
-            return true;
-        }
-        return false;
+    private void addTree(int row, int column, int height) {
+        String treeName = String.valueOf(row) + "x" + String.valueOf(column);
+        Tree tree = new Tree(row, column, height);
+        visibleTrees.put(treeName, tree);
+
     }
 
-    private boolean addVisibleTree(int column, int row, int height) {
-        String treeName = row + String.valueOf(column);
-        if (!visibleTrees.containsKey(treeName)) {
-            Tree tree = new Tree(row, column, height);
-            visibleTrees.put(treeName, tree);
-            return true;
-        }
-        return false;
+    private void addRotatedTree(int column, int row, int height) {
+        String treeName = String.valueOf(row) + "x" + String.valueOf(column);
+        Tree tree = new Tree(row, column, height);
+        visibleTrees.put(treeName, tree);
+
     }
 
-    private void leftToRightSearch(final String row) {
+    private void leftToRightRowSearch(final String row) {
         int highestTree = Integer.parseInt(row.substring(0, 1));
-        addPotentialTree(currentRowNumber, 0, highestTree);
+        addTree(currentRowNumber, 0, highestTree);
         for (int column = 0; column < row.length(); column++) {
             int currentHeight = Integer.parseInt(row.substring(column, column + 1));
             if (currentHeight > highestTree) {
                 highestTree = currentHeight;
-                addPotentialTree(currentRowNumber, column, currentHeight);
+                addTree(currentRowNumber, column, currentHeight);
             }
         }
     }
 
-    private void rightToLeftSearch(final String row) {
+    private void rightToLeftRowSearch(final String row) {
         int totalColumns = row.length();
         int highestTree = Integer.parseInt(row.substring(totalColumns - 1, totalColumns));
-        addPotentialTree(currentRowNumber, totalColumns - 1, highestTree);
+        addTree(currentRowNumber, totalColumns - 1, highestTree);
         for (int column = totalColumns - 1; column >= 0; column--) {
             int currentHeight = Integer.parseInt(row.substring(column, column + 1));
             if (currentHeight > highestTree) {
                 highestTree = currentHeight;
-                if (!addPotentialTree(currentRowNumber, column, currentHeight)) {
-                    break;
-                }
+                addRotatedTree(currentRowNumber, column, currentHeight);
             }
         }
     }
 
-    private void createRotatedPotentialMap() {
-        Collection<Tree> trees = potentialTrees.values();
+    private void createRotatedTreeMap() {
+        Collection<Tree> trees = visibleTrees.values();
         for (Tree tree : trees) {
-            StringBuilder oldRow = new StringBuilder(rotatedPotentialMap.get(tree.column()));
+            StringBuilder oldRow = new StringBuilder(rotatedTreeMap.get(tree.column()));
             oldRow.setCharAt(tree.row(), String.valueOf(tree.height()).charAt(0));
-            rotatedPotentialMap.set(tree.column(), oldRow.toString());
+            rotatedTreeMap.set(tree.column(), oldRow.toString());
         }
     }
 
-    private void initializeRotatedPotentialMap(int rows, int columns) {
-        rotatedPotentialMap = new ArrayList<>(columns);
+    private void createRotatedTreeMap(List<String> treeRows) {
+        for (int row = 0; row < treeRows.size(); row++) {
+            char[] trees = treeRows.get(row).toCharArray();
+            for (int column = 0; column < trees.length; column++) {
+                StringBuilder oldRow = new StringBuilder(rotatedTreeMap.get(column));
+                oldRow.setCharAt(row, trees[column]);
+                rotatedTreeMap.set(column, oldRow.toString());
+            }
+        }
+    }
+
+    private void initializeRotatedTreeMap(int rows, int columns) {
+        rotatedTreeMap = new ArrayList<>(columns);
         for (int i = 0; i < columns; i++) {
             StringBuilder sb = new StringBuilder();
             while (sb.length() < rows) {
                 sb.append('0');
             }
-            rotatedPotentialMap.add(sb.toString());
+            rotatedTreeMap.add(sb.toString());
         }
     }
 
-    private void findVisibleTreesInRow(String row) {
-        leftToRightVisibleSearch(row);
-        rightToLeftVisibleSearch(row);
+    private void findVisibleTreesByColumn(String row) {
+        leftToRightColumnSearch(row);
+        rightToLeftColumnSearch(row);
     }
 
-    private void rightToLeftVisibleSearch(String row) {
+    private void rightToLeftColumnSearch(String row) {
         int highestTree = Integer.parseInt(row.substring(0, 1));
-        addVisibleTree(currentRowNumber, 0, highestTree);
+        addRotatedTree(currentRowNumber, 0, highestTree);
         for (int column = 0; column < row.length(); column++) {
             int currentHeight = Integer.parseInt(row.substring(column, column + 1));
             if (currentHeight > highestTree) {
                 highestTree = currentHeight;
-                addVisibleTree(currentRowNumber, column, currentHeight);
+                addRotatedTree(currentRowNumber, column, currentHeight);
             }
         }
     }
 
-    private void leftToRightVisibleSearch(String row) {
+    private void leftToRightColumnSearch(String row) {
         int totalColumns = row.length();
         int highestTree = Integer.parseInt(row.substring(totalColumns - 1, totalColumns));
-        addVisibleTree(currentRowNumber, totalColumns - 1, highestTree);
+        addRotatedTree(currentRowNumber, totalColumns - 1, highestTree);
         for (int column = totalColumns - 1; column >= 0; column--) {
             int currentHeight = Integer.parseInt(row.substring(column, column + 1));
             if (currentHeight > highestTree) {
                 highestTree = currentHeight;
-                if (!addVisibleTree(currentRowNumber, column, currentHeight)) {
-                    break;
-                }
+                addRotatedTree(currentRowNumber, column, currentHeight);
             }
         }
     }
 }
+
