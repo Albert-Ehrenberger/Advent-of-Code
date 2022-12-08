@@ -1,5 +1,7 @@
 package day08;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.TreeMap;
 
@@ -7,11 +9,14 @@ public class TreePicker {
 
     private final TreeMap<String, Tree> potentialTrees = new TreeMap<>();
     private int currentRowNumber;
+    private List<String> rotatedPotentialMap;
 
     public void findVisible(List<String> treeRows) {
         for (currentRowNumber = 0; currentRowNumber < treeRows.size(); currentRowNumber++) {
             findPotentialTreesInRow(treeRows.get(currentRowNumber));
         }
+        initializeRotatedPotentialMap(treeRows.size(), treeRows.get(0).length());
+        createRotatedPotentialMap();
     }
 
 
@@ -54,6 +59,26 @@ public class TreePicker {
                     break;
                 }
             }
+        }
+    }
+
+    private void createRotatedPotentialMap() {
+        Collection<Tree> trees = potentialTrees.values();
+        for (Tree tree : trees) {
+            StringBuilder oldRow = new StringBuilder(rotatedPotentialMap.get(tree.column()));
+            oldRow.setCharAt(tree.row(), String.valueOf(tree.height()).charAt(0));
+            rotatedPotentialMap.set(tree.column(), oldRow.toString());
+        }
+    }
+
+    private void initializeRotatedPotentialMap(int rows, int columns) {
+        rotatedPotentialMap = new ArrayList<>(columns);
+        for (int i = 0; i < columns; i++) {
+            StringBuilder sb = new StringBuilder();
+            while (sb.length() < rows) {
+                sb.append('0');
+            }
+            rotatedPotentialMap.add(sb.toString());
         }
     }
 }
