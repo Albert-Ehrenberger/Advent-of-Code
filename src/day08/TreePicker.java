@@ -12,7 +12,13 @@ public class TreePicker {
     private List<String> rotatedPotentialMap;
 
     public void findVisible(List<String> treeRows) {
-        for (currentRowNumber = 0; currentRowNumber < treeRows.size(); currentRowNumber++) {
+        String firstRow = treeRows.get(0);
+        String lastRow = treeRows.get(treeRows.size() - 1);
+        for (int column = 0; column < firstRow.length(); column++) {
+            addTree(0, column, Integer.parseInt(firstRow.substring(column, column + 1)));
+            addTree(treeRows.size() - 1, column, Integer.parseInt(lastRow.substring(column, column + 1)));
+        }
+        for (currentRowNumber = 1; currentRowNumber < treeRows.size() - 1; currentRowNumber++) {
             findPotentialTreesInRow(treeRows.get(currentRowNumber));
         }
         initializeRotatedPotentialMap(treeRows.size(), treeRows.get(0).length());

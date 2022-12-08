@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day08 TreePicker finds all visible trees by row">
+    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day08 TreePicker creates rotatedPotentialMap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/day08/TreePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day08/TreePicker.java" afterDir="false" />
     </list>
@@ -268,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670502963379</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Day08 TreePicker creates rotatedPotentialMap">
+      <created>1670505882549</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1670505882549</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,15 +309,16 @@
     <MESSAGE value="Day07 First star" />
     <MESSAGE value="Day07 Second star" />
     <MESSAGE value="Day08 TreePicker finds all visible trees by row" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day08 TreePicker finds all visible trees by row" />
+    <MESSAGE value="Day08 TreePicker creates rotatedPotentialMap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day08 TreePicker creates rotatedPotentialMap" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/day08/TreePicker.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="12" />
+          <line>25</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
