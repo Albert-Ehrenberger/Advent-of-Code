@@ -8,7 +8,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        List<String> treeRows = Files.readAllLines(Paths.get("./src/day08/testinput.txt"));
+        List<String> treeRows = Files.readAllLines(Paths.get("./src/day08/input.txt"));
         TreePicker picker = new TreePicker();
         picker.findVisible(treeRows);
     }
