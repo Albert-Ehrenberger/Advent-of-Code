@@ -9,9 +9,12 @@ import java.util.Set;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        List<String> steps = Files.readAllLines(Paths.get("./src/day09/input.txt"));
+        List<String> steps = Files.readAllLines(Paths.get("./src/day09/testinput.txt"));
         TailPositionMapper mapper = new TailPositionMapper();
         Set<String> tailBreadCrumb = mapper.calculateBreadCrumb(steps);
+        System.out.println(tailBreadCrumb.size());
+        TailWithKnotsPositionMapper knotMapper = new TailWithKnotsPositionMapper(10);
+        tailBreadCrumb = knotMapper.calculateBreadCrumb(steps);
         System.out.println(tailBreadCrumb.size());
     }
 }

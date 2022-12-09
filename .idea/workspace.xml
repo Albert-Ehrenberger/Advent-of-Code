@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day08 Second star">
-      <change afterPath="$PROJECT_DIR$/src/day09/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day09/PositionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day09/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day09/testinput.txt" afterDir="false" />
+    <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day09 First star">
+      <change afterPath="$PROJECT_DIR$/src/day09/TailWithKnotsPositionMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day09/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day09/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +45,19 @@
   }
 }</component>
   <component name="RunManager" selected="Application.day09.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day09.Main" />
+      <module name="AoC22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day09.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="day05.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day05.Main" />
       <module name="AoC22" />
@@ -92,19 +103,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="day08.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="day09.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day09.Main" />
-      <module name="AoC22" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -320,7 +318,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670537618874</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Day09 First star">
+      <created>1670619009811</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1670619009811</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Day09 First star">
+      <created>1670619242021</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1670619242021</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,7 +347,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First commit" />
     <MESSAGE value="Day01 first star" />
     <MESSAGE value="Day01 second star" />
     <MESSAGE value="Day02 first star" />
@@ -360,6 +371,33 @@
     <MESSAGE value="Day08 This isn't working" />
     <MESSAGE value="Day08 First star" />
     <MESSAGE value="Day08 Second star" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day08 Second star" />
+    <MESSAGE value="Day09 First star" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day09 First star" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day09/TailWithKnotsPositionMapper.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day09/TailWithKnotsPositionMapper.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day09/TailWithKnotsPositionMapper.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day09/TailWithKnotsPositionMapper.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
