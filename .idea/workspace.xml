@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c448c068-b6ae-489b-b409-a9992dcc9806" name="Changes" comment="Day09 First star">
-      <change afterPath="$PROJECT_DIR$/src/day09/TailWithKnotsPositionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day10/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day10/SignalStrengthCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day10/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day10/testinput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day09/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day09/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,20 +46,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.day09.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day09.Main" />
-      <module name="AoC22" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day09.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.day10.Main">
     <configuration name="day05.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day05.Main" />
       <module name="AoC22" />
@@ -110,9 +99,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="day10.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day10.Main" />
+      <module name="AoC22" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.day09.Main" />
+        <item itemvalue="Application.day10.Main" />
         <item itemvalue="Application.day08.Main" />
         <item itemvalue="Application.day07.Main" />
         <item itemvalue="Application.day06.Main" />
@@ -396,6 +398,11 @@
           <url>file://$PROJECT_DIR$/src/day09/TailWithKnotsPositionMapper.java</url>
           <line>59</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/day10/SignalStrengthCalculator.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
